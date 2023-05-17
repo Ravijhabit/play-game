@@ -19,7 +19,7 @@ function App() {
   const handler = async (event) =>{
     event.preventDefault();
     if(event.key===' ' && play){
-      const response = await axios.get('https://www.randomnumberapi.com/api/v1.0/random?min=100&max=1000&count=1');
+      const response = await axios.post('https://recipe-api-esip.onrender.com/randomnumbergenerator?minValue=100&maxValue=1000');
       const data = response.data[0];
       if(data%2===0){
         setEvenDiv([...evenDiv,data]);
