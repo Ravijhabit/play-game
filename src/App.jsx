@@ -20,7 +20,7 @@ function App() {
     event.preventDefault();
     if(event.key===' ' && play){
       const response = await axios.post('https://recipe-api-esip.onrender.com/randomnumbergenerator?minValue=100&maxValue=1000');
-      const data = response.data[0];
+      const data = response.data;
       if(data%2===0){
         setEvenDiv([...evenDiv,data]);
       }else{
