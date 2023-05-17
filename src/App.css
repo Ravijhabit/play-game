@@ -1,0 +1,50 @@
+*{
+  padding:0;
+  margin:0;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  height:90vh;
+  justify-content: space-between;
+  align-items:center;
+  padding:20px;
+}
+.playground{
+  display: flex;
+
+}
+.container{
+  width:500px;
+  height:500px;
+  padding:20px;
+  color:white;
+}
+.left{
+  background:red;
+}
+.right{
+  background:blue;
+}
+.scoreBoard{
+  display: flex;
+  justify-content: space-between;
+}
+.invisible{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.scores{
+  display: flex;
+}
+.data{
+  padding:10px;
+  background-color: white;
+  color:black;
+  margin:10px;
+}
+.container>h1{
+  font-size:50px;
+}
